@@ -7,31 +7,31 @@ import { Star, Quote } from 'lucide-react'
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
+      name: 'Мария Петрова',
       company: 'Fashion Forward Co.',
       rating: 5,
-      text: 'Working with this video expert transformed our social media presence completely. Our engagement rates increased by 300% within just two months!',
+      text: 'Работата с Ивайло трансформира напълно нашето присъствие в социалните медии. Нашите показатели за ангажимент се увеличиха с 300% само за два месеца!',
       avatar: '/api/placeholder/80/80'
     },
     {
-      name: 'Mike Chen',
+      name: 'Георги Христов',
       company: 'TechStart Inc.',
       rating: 5,
-      text: 'The quality of content and understanding of our brand was exceptional. Our product launch video went viral and brought in countless new customers.',
+      text: 'Качеството на съдържанието и разбирането на нашия бранд бяха изключителни. Нашето видео за лансиране на продукта стана вирусно и привлече безброй нови клиенти.',
       avatar: '/api/placeholder/80/80'
     },
     {
-      name: 'Emma Rodriguez',
+      name: 'Елена Стоянова',
       company: 'Wellness Studio',
       rating: 5,
-      text: 'Professional, creative, and results-driven. The videos created for our fitness challenges helped us grow from 5K to 50K followers in 6 months.',
+      text: 'Професионален, креативен и ориентиран към резултати. Видеата, създадени за нашите фитнес предизвикателства, ни помогнаха да нараснем от 5 хил. до 50 хил. последователи за 6 месеца.',
       avatar: '/api/placeholder/80/80'
     },
     {
-      name: 'David Thompson',
-      company: 'Local Restaurant',
+      name: 'Димитър Николов',
+      company: 'Местен ресторант',
       rating: 5,
-      text: 'Our food videos on TikTok and Instagram brought so many new customers that we had to expand our delivery radius. Amazing ROI!',
+      text: 'Нашите видеа с храна в TikTok и Instagram привлякоха толкова много нови клиенти, че трябваше да разширим района на доставка. Невероятна възвръщаемост на инвестицията!',
       avatar: '/api/placeholder/80/80'
     }
   ]
@@ -46,12 +46,12 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Client Success Stories
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-high-contrast">
+            Истории за успех на клиенти
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take my word for it. Here's what my clients say about 
-            the impact of professional video content on their businesses.
+          <p className="text-xl text-medium-contrast max-w-3xl mx-auto">
+            Не се доверявайте само на думите ми. Ето какво казват моите клиенти за 
+            въздействието на професионалното видео съдържание върху техния бизнес.
           </p>
         </motion.div>
 
@@ -71,8 +71,8 @@ export default function Testimonials() {
                 ))}
               </div>
               <div className="relative mb-6">
-                <Quote className="absolute -top-2 -left-2 text-primary-200" size={32} />
-                <p className="text-gray-700 text-lg leading-relaxed pl-6">
+                <Quote className="absolute -top-2 -left-2 text-blue-200" size={32} />
+                <p className="text-medium-contrast text-lg leading-relaxed pl-6">
                   {testimonial.text}
                 </p>
               </div>
@@ -83,8 +83,8 @@ export default function Testimonials() {
                   className="w-12 h-12 rounded-full mr-4"
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-gray-600">{testimonial.company}</p>
+                  <h4 className="font-semibold text-high-contrast">{testimonial.name}</h4>
+                  <p className="text-medium-contrast">{testimonial.company}</p>
                 </div>
               </div>
             </motion.div>
@@ -98,15 +98,15 @@ export default function Testimonials() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-primary-600 to-accent-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-brand-blue to-brand-orange rounded-2xl p-8 text-white">
             <h3 className="text-3xl font-bold mb-4">
-              Ready to Join These Success Stories?
+              Готови ли сте да се присъедините към тези истории за успех?
             </h3>
             <p className="text-xl mb-6 opacity-90">
-              Let's create video content that drives real results for your business.
+              Нека създадем видео съдържание, което носи реални резултати за вашия бизнес.
             </p>
-            <button className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200">
-              Start Your Project
+            <button className="bg-white text-brand-blue px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg">
+              Започнете вашия проект
             </button>
           </div>
         </motion.div>

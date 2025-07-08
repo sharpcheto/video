@@ -17,11 +17,11 @@ export default function Header() {
   }, [])
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Начало', href: '#home' },
+    { name: 'За мен', href: '#about' },
+    { name: 'Услуги', href: '#services' },
+    { name: 'Портфолио', href: '#portfolio' },
+    { name: 'Контакт', href: '#contact' }
   ]
 
   return (
@@ -31,7 +31,7 @@ export default function Header() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold gradient-text">
-            VideoPro
+            Ивайло Стоянов
           </div>
 
           {/* Desktop Navigation */}

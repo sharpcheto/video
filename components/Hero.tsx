@@ -15,30 +15,31 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="text-center lg:text-left"
           >
-            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-              Grow Your Brand with 
+            <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight text-high-contrast">
+              Развий бранда си с 
               <span className="gradient-text block">
-                Short-Form Videos
+                кратки видеа
               </span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-              I help businesses attract new clients through engaging, high-impact video content 
-              for Instagram, TikTok, and Facebook. Transform your social media presence today.
+            <p className="text-xl text-medium-contrast mb-8 max-w-2xl">
+              Аз съм Ивайло Стоянов и помагам на бизнеси да привличат нови клиенти чрез ангажиращо, 
+              високоефективно видео съдържание за Instagram, TikTok и Facebook. Трансформирай своето 
+              присъствие в социалните медии днес.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-700 transition-colors duration-200 flex items-center justify-center gap-2"
+                className="bg-brand-orange text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-orange-600 transition-colors duration-200 flex items-center justify-center gap-2 shadow-lg"
               >
-                Get Started <ArrowRight size={20} />
+                Започни сега <ArrowRight size={20} />
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-600 hover:text-white transition-all duration-200 flex items-center justify-center gap-2"
+                className="border-2 border-brand-blue text-brand-blue px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-blue hover:text-white transition-all duration-200 flex items-center justify-center gap-2"
               >
-                <Play size={20} /> Watch My Work
+                <Play size={20} /> Виж работата ми
               </motion.button>
             </div>
           </motion.div>

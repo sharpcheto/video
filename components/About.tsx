@@ -6,10 +6,10 @@ import { Camera, Heart, Award, Users } from 'lucide-react'
 
 export default function About() {
   const stats = [
-    { icon: Camera, number: '500+', label: 'Videos Created' },
-    { icon: Users, number: '100+', label: 'Happy Clients' },
-    { icon: Award, number: '50M+', label: 'Total Views' },
-    { icon: Heart, number: '1M+', label: 'Engagements' }
+    { icon: Camera, number: '500+', label: 'Създадени видеа' },
+    { icon: Users, number: '100+', label: 'Доволни клиенти' },
+    { icon: Award, number: '50М+', label: 'Общо гледания' },
+    { icon: Heart, number: '1М+', label: 'Ангажименти' }
   ]
 
   return (
@@ -22,12 +22,12 @@ export default function About() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            About Me
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-high-contrast">
+            За мен
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            I'm a passionate video content creator with expertise in crafting compelling 
-            short-form videos that drive engagement and convert viewers into customers.
+          <p className="text-xl text-medium-contrast max-w-3xl mx-auto">
+            Аз съм страстен създател на видео съдържание с експертиза в изработката на завладяващи 
+            кратки видеа, които увеличават ангажимента и превръщат зрителите в клиенти.
           </p>
         </motion.div>
 
@@ -54,26 +54,27 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <h3 className="text-3xl font-bold text-gray-900">
-              Turning Ideas Into Viral Content
+            <h3 className="text-3xl font-bold text-high-contrast">
+              Превръщам идеите във вирусно съдържание
             </h3>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              With years of experience in social media marketing and video production, 
-              I understand what makes content go viral. I combine creative storytelling 
-              with data-driven strategies to help brands stand out in the crowded social media landscape.
+            <p className="text-medium-contrast text-lg leading-relaxed">
+              С години опит в социалните медии и видеопродукцията, разбирам какво кара 
+              съдържанието да стане вирусно. Комбинирам креативното разказване с 
+              стратегии, базирани на данни, за да помогна на брандовете да се открояват 
+              в претъпканото пространство на социалните медии.
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-                <span className="text-gray-700">Expert in Instagram Reels, TikTok, and Facebook video content</span>
+                <div className="w-2 h-2 bg-brand-blue rounded-full"></div>
+                <span className="text-medium-contrast">Експерт в Instagram Reels, TikTok и Facebook видео съдържание</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-                <span className="text-gray-700">Specialized in brand storytelling and audience engagement</span>
+                <div className="w-2 h-2 bg-brand-blue rounded-full"></div>
+                <span className="text-medium-contrast">Специализиран в разказването на брандове и ангажиране на аудитория</span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-                <span className="text-gray-700">Proven track record of increasing brand visibility</span>
+                <div className="w-2 h-2 bg-brand-blue rounded-full"></div>
+                <span className="text-medium-contrast">Доказан успех в увеличаване на видимостта на брандове</span>
               </div>
             </div>
           </motion.div>
@@ -88,11 +89,11 @@ export default function About() {
         >
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <stat.icon className="text-primary-600" size={32} />
+              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <stat.icon className="text-brand-blue" size={32} />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
-              <div className="text-gray-600">{stat.label}</div>
+              <div className="text-3xl font-bold text-high-contrast mb-2">{stat.number}</div>
+              <div className="text-medium-contrast">{stat.label}</div>
             </div>
           ))}
         </motion.div>

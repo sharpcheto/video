@@ -8,39 +8,39 @@ export default function Services() {
   const services = [
     {
       icon: Video,
-      title: 'Short-Form Video Creation',
-      description: 'Custom-crafted videos optimized for Instagram Reels, TikTok, and Facebook that capture attention and drive engagement.',
-      features: ['15-60 second videos', 'Trend-aware content', 'Brand-aligned messaging']
+      title: 'Създаване на кратки видеа',
+      description: 'Персонализирани видеа, оптимизирани за Instagram Reels, TikTok и Facebook, които привличат внимание и увеличават ангажимента.',
+      features: ['15-60 секундни видеа', 'Съдържание следващо тенденциите', 'Съобщения съобразени с бранда']
     },
     {
       icon: Edit,
-      title: 'Video Editing & Post-Production',
-      description: 'Professional editing services that transform raw footage into polished, engaging content ready for social media.',
-      features: ['Color grading', 'Motion graphics', 'Sound design']
+      title: 'Монтаж и постпродукция',
+      description: 'Професионални услуги по монтаж, които превръщат суровия материал в изполиран, ангажиращ контент готов за социални медии.',
+      features: ['Цветова корекция', 'Motion graphics', 'Звуков дизайн']
     },
     {
       icon: Target,
-      title: 'Content Strategy',
-      description: 'Data-driven content strategies that align with your brand goals and target audience preferences.',
-      features: ['Audience analysis', 'Content planning', 'Trend forecasting']
+      title: 'Стратегия за съдържание',
+      description: 'Стратегии за съдържание, базирани на данни, които се съобразяват с целите на бранда и предпочитанията на целевата аудитория.',
+      features: ['Анализ на аудитория', 'Планиране на съдържание', 'Прогнозиране на тенденции']
     },
     {
       icon: TrendingUp,
-      title: 'Social Media Growth',
-      description: 'Comprehensive growth strategies designed to increase your follower count and boost engagement rates.',
-      features: ['Hashtag optimization', 'Posting schedules', 'Community management']
+      title: 'Растеж в социалните медии',
+      description: 'Цялостни стратегии за растеж, предназначени да увеличат броя на последователите и да подобрят нивото на ангажимент.',
+      features: ['Оптимизация на хаштагове', 'Графици за публикуване', 'Управление на общността']
     },
     {
       icon: Megaphone,
-      title: 'Brand Storytelling',
-      description: 'Compelling narratives that connect with your audience emotionally and build lasting brand relationships.',
-      features: ['Brand voice development', 'Story arcs', 'Emotional connection']
+      title: 'Разказване на брандови истории',
+      description: 'Завладяващи наративи, които се свързват емоционално с аудиторията и изграждат трайни брандови отношения.',
+      features: ['Развитие на гласа на бранда', 'Сюжетни линии', 'Емоционална връзка']
     },
     {
       icon: Zap,
-      title: 'Viral Marketing',
-      description: 'Strategic approaches to create content with viral potential, maximizing reach and brand exposure.',
-      features: ['Trend integration', 'Viral mechanics', 'Rapid response content']
+      title: 'Вирусен маркетинг',
+      description: 'Стратегически подходи за създаване на съдържание с вирусен потенциал, максимизиращи обхвата и експозицията на бранда.',
+      features: ['Интеграция на тенденции', 'Вирусни механики', 'Бързо съдържание за отговор']
     }
   ]
 
@@ -54,12 +54,12 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            My Services
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-high-contrast">
+            Моите услуги
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive video content solutions designed to elevate your brand 
-            and drive meaningful engagement across all social media platforms.
+          <p className="text-xl text-medium-contrast max-w-3xl mx-auto">
+            Цялостни решения за видео съдържание, предназначени да издигнат бранда ви 
+            и да генерират значим ангажимент във всички социални медии платформи.
           </p>
         </motion.div>
 
@@ -73,20 +73,20 @@ export default function Services() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <service.icon className="text-primary-600" size={32} />
+              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <service.icon className="text-brand-blue" size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-high-contrast">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-medium-contrast mb-6 leading-relaxed">
                 {service.description}
               </p>
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center space-x-2">
-                    <div className="w-2 h-2 bg-primary-600 rounded-full"></div>
-                    <span className="text-gray-700">{feature}</span>
+                    <div className="w-2 h-2 bg-brand-blue rounded-full"></div>
+                    <span className="text-medium-contrast">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -101,8 +101,8 @@ export default function Services() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <button className="bg-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-700 transition-colors duration-200">
-            Get Custom Quote
+          <button className="bg-brand-orange text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-orange-600 transition-colors duration-200 shadow-lg">
+            Получи персонализирана оферта
           </button>
         </motion.div>
       </div>

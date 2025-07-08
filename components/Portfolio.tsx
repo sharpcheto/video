@@ -8,49 +8,49 @@ export default function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      title: 'Fashion Brand Campaign',
+      title: 'Кампания за модна марка',
       platform: 'Instagram Reels',
-      views: '2.3M',
+      views: '2.3М',
       engagement: '15.2%',
       thumbnail: '/api/placeholder/300/400'
     },
     {
       id: 2,
-      title: 'Restaurant Promo',
+      title: 'Промоция на ресторант',
       platform: 'TikTok',
-      views: '1.8M',
+      views: '1.8М',
       engagement: '18.7%',
       thumbnail: '/api/placeholder/300/400'
     },
     {
       id: 3,
-      title: 'Tech Product Launch',
+      title: 'Лансиране на технологичен продукт',
       platform: 'Facebook',
-      views: '945K',
+      views: '945К',
       engagement: '12.4%',
       thumbnail: '/api/placeholder/300/400'
     },
     {
       id: 4,
-      title: 'Fitness Challenge',
+      title: 'Фитнес предизвикателство',
       platform: 'Instagram Reels',
-      views: '3.1M',
+      views: '3.1М',
       engagement: '22.1%',
       thumbnail: '/api/placeholder/300/400'
     },
     {
       id: 5,
-      title: 'Beauty Tutorial',
+      title: 'Урок за красота',
       platform: 'TikTok',
-      views: '2.7M',
+      views: '2.7М',
       engagement: '19.8%',
       thumbnail: '/api/placeholder/300/400'
     },
     {
       id: 6,
-      title: 'Travel Destination',
+      title: 'Пътуване до дестинация',
       platform: 'Instagram Reels',
-      views: '1.5M',
+      views: '1.5М',
       engagement: '16.3%',
       thumbnail: '/api/placeholder/300/400'
     }
@@ -66,12 +66,12 @@ export default function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            My Portfolio
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-high-contrast">
+            Моето портфолио
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore some of my recent work that helped brands achieve incredible 
-            engagement and reach millions of potential customers.
+          <p className="text-xl text-medium-contrast max-w-3xl mx-auto">
+            Разгледайте част от моята скорошна работа, която помогна на брандове да постигнат 
+            невероятен ангажимент и да достигнат милиони потенциални клиенти.
           </p>
         </motion.div>
 
@@ -101,15 +101,15 @@ export default function Portfolio() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900">
+                <h3 className="text-xl font-bold mb-2 text-high-contrast">
                   {item.title}
                 </h3>
-                <div className="flex justify-between items-center text-sm text-gray-600">
-                  <span>{item.views} views</span>
-                  <span>{item.engagement} engagement</span>
+                <div className="flex justify-between items-center text-sm text-medium-contrast">
+                  <span>{item.views} гледания</span>
+                  <span>{item.engagement} ангажимент</span>
                 </div>
-                <button className="mt-4 text-primary-600 hover:text-primary-700 font-medium flex items-center space-x-1">
-                  <span>View Project</span>
+                <button className="mt-4 text-brand-blue hover:text-blue-700 font-medium flex items-center space-x-1">
+                  <span>Виж проекта</span>
                   <ExternalLink size={16} />
                 </button>
               </div>
@@ -124,8 +124,8 @@ export default function Portfolio() {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <p className="text-gray-600 mb-6">
-            Want to see more of my work? Follow me on social media!
+          <p className="text-medium-contrast mb-6">
+            Искате да видите повече от работата ми? Последвайте ме в социалните медии!
           </p>
           <div className="flex justify-center space-x-6">
             <a

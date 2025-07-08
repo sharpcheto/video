@@ -21,11 +21,11 @@ export default function Footer() {
             className="lg:col-span-2"
           >
             <div className="text-3xl font-bold gradient-text mb-4">
-              VideoPro
+              Ивайло Стоянов
             </div>
             <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-md">
-              Transforming brands through engaging short-form video content. 
-              Let's create something amazing together and take your social media presence to the next level.
+              Трансформирам брандове чрез ангажиращо късо видео съдържание. 
+              Нека създадем нещо невероятно заедно и издигнем вашето присъствие в социалните медии на следващото ниво.
             </p>
             <div className="flex space-x-4">
               <a
@@ -61,13 +61,13 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h3 className="text-xl font-bold mb-6">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-6">Бързи връзки</h3>
             <ul className="space-y-3">
-              <li><a href="#home" className="text-gray-300 hover:text-white transition-colors duration-200">Home</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors duration-200">About</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors duration-200">Services</a></li>
-              <li><a href="#portfolio" className="text-gray-300 hover:text-white transition-colors duration-200">Portfolio</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-200">Contact</a></li>
+              <li><a href="#home" className="text-gray-300 hover:text-white transition-colors duration-200">Начало</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors duration-200">За мен</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-white transition-colors duration-200">Услуги</a></li>
+              <li><a href="#portfolio" className="text-gray-300 hover:text-white transition-colors duration-200">Портфолио</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors duration-200">Контакт</a></li>
             </ul>
           </motion.div>
 
@@ -77,13 +77,13 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-xl font-bold mb-6">Services</h3>
+            <h3 className="text-xl font-bold mb-6">Услуги</h3>
             <ul className="space-y-3">
-              <li><span className="text-gray-300">Short-Form Videos</span></li>
-              <li><span className="text-gray-300">Content Strategy</span></li>
-              <li><span className="text-gray-300">Brand Storytelling</span></li>
-              <li><span className="text-gray-300">Social Media Growth</span></li>
-              <li><span className="text-gray-300">Viral Marketing</span></li>
+              <li><span className="text-gray-300">Кратки видеа</span></li>
+              <li><span className="text-gray-300">Стратегия за съдържание</span></li>
+              <li><span className="text-gray-300">Брандови истории</span></li>
+              <li><span className="text-gray-300">Растеж в социалните медии</span></li>
+              <li><span className="text-gray-300">Вирусен маркетинг</span></li>
             </ul>
           </motion.div>
         </div>
@@ -96,11 +96,11 @@ export default function Footer() {
           className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
         >
           <p className="text-gray-400 mb-4 md:mb-0">
-            © 2024 VideoPro. All rights reserved.
+            © 2024 Ивайло Стоянов. Всички права запазени.
           </p>
           <button
             onClick={scrollToTop}
-            className="bg-primary-600 hover:bg-primary-700 p-3 rounded-full transition-colors duration-200"
+            className="bg-brand-blue hover:bg-blue-700 p-3 rounded-full transition-colors duration-200"
           >
             <ArrowUp size={20} />
           </button>
